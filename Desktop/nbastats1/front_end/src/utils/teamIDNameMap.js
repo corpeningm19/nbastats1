@@ -1,0 +1,35 @@
+const teamIDNameMap = {
+    '1610612737': {'team_name': 'Atlanta Hawks', 'team_abrv': 'ATL'},
+    '1610612738': {'team_name': 'Boston Celtics', 'team_abrv': 'BOS'},
+    '1610612739': {'team_name': 'Cleveland Cavaliers', 'team_abrv': 'CLE'},
+    '1610612740': {'team_name': 'New Orleans Pelicans', 'team_abrv': 'NOP'},
+    '1610612741': {'team_name': 'Chicago Bulls', 'team_abrv': 'CHI'},
+    '1610612742': {'team_name': 'Dallas Mavericks', 'team_abrv': 'DAL'},
+    '1610612743': {'team_name': 'Denver Nuggets', 'team_abrv': 'DEN'},
+    '1610612744': {'team_name': 'Golden State Warriors', 'team_abrv': 'GSW'},
+    '1610612745': {'team_name': 'Houston Rockets', 'team_abrv': 'HOU'},
+    '1610612746': {'team_name': 'Los Angeles Clippers', 'team_abrv': 'LAC'},
+    '1610612747': {'team_name': 'Los Angeles Lakers', 'team_abrv': 'LAL'},
+    '1610612748': {'team_name': 'Miami Heat', 'team_abrv': 'MIA'},
+    '1610612749': {'team_name': 'Milwaukee Bucks', 'team_abrv': 'MIL'},
+    '1610612750': {'team_name': 'Minnesota Timberwolves', 'team_abrv': 'MIN'},
+    '1610612751': {'team_name': 'Brooklyn Nets', 'team_abrv': 'BKN'},
+    '1610612752': {'team_name': 'New York Knicks', 'team_abrv': 'NYK'},
+    '1610612753': {'team_name': 'Orlando Magic', 'team_abrv': 'ORL'},
+    '1610612754': {'team_name': 'Indiana Pacers', 'team_abrv': 'IND'},
+    '1610612755': {'team_name': 'Philadelphia 76ers', 'team_abrv': 'PHI'},
+    '1610612756': {'team_name': 'Phoenix Suns', 'team_abrv': 'PHX'},
+    '1610612757': {'team_name': 'Portland Trail Blazers', 'team_abrv': 'POR'},
+    '1610612758': {'team_name': 'Sacramento Kings', 'team_abrv': 'SAC'},
+    '1610612759': {'team_name': 'San Antonio Spurs', 'team_abrv': 'SAS'},
+    '1610612760': {'team_name': 'Oklahoma City Thunder', 'team_abrv': 'OKC'},
+    '1610612761': {'team_name': 'Toronto Raptors', 'team_abrv': 'TOR'},
+    '1610612762': {'team_name': 'Utah Jazz', 'team_abrv': 'UTA'},
+    '1610612763': {'team_name': 'Memphis Grizzlies', 'team_abrv': 'MEM'},
+    '1610612764': {'team_name': 'Washington Wizards', 'team_abrv': 'WAS'},
+    '1610612765': {'team_name': 'Detroit Pistons', 'team_abrv': 'DET'},
+    '1610612766': {'team_name': 'Charlotte Hornets', 'team_abrv': 'CHA'}
+   }
+
+export default teamIDNameMap;
+   

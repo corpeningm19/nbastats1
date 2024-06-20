@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans&family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* navbar */
+li, a, button {
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #3F88C5;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+img {
+    max-width: 5%;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+    color: #D00000;
+}
+
+button {
+    color: #EDF4ED;
+    /* padding: 9px 25px; */
+    background-color: #D00000;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: #FF4747;
+}
+
+/* header */
+h1 {
+    font-family: "Archivo Black", sans-serif;
+    font-size: 50px;
+    background-image: linear-gradient(311deg, rgba(63,136,197,1) 39%, rgba(208,0,0,1) 56%);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+    margin-top: -5vh;
+}
+
+/* Search Bar */
+.search-bar {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 80%;
+    width: 100%;
+    max-width: 700px;
+    background: rgba(26, 2, 2, 0.048);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+    backdrop-filter: blur(4px) saturate(180%);
+}
+
+.search-bar input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 20px;
+    color: #0B0A07;
+}
+
+::placeholder {
+    color: #0B0A07;
+}
+
+.img2 {
+    width: 100%;
+    height: auto;
+}
+
+.search-bar button {
+    border: 0;
+    flex: 2;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    background-color: #D00000;
+    cursor: pointer;
+}
+ 
+/* Image Slider */
+
+.container {
+    margin-top: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    gap: 10px;
+  
+    > div {
+      flex: 0 0 120px;
+      border-radius: 0.5rem;
+      transition: 0.5s ease-in-out;
+      cursor: pointer;
+      box-shadow: 1px 5px 15px #1e0e3e;
+      position: relative;
+      overflow: hidden;
+  
+      &:nth-of-type(1) {
+        background: url("../src/assets/curry.jpg")
+          no-repeat 50% / cover;
+      }
+      &:nth-of-type(2) {
+        background: url("../src/assets/lebron.jpg")
+          no-repeat 50% / cover;
+      }
+      &:nth-of-type(3) {
+        background: url("../src/assets/kevin.jpg")
+          no-repeat 50% / cover;
+      }
+      &:nth-of-type(4) {
+        background: url("../src/assets/Nikola.jpg")
+          no-repeat 50% / cover;
+      }
+      &:nth-of-type(5) {
+        background: url("../src/assets/GA.jpg")
+          no-repeat 50% / cover;
+      }&:nth-of-type(6) {
+        background: url("../src/assets/Kawhi.jpg")
+          no-repeat 50% / cover;
+      }
+  
+      .content {
+        font-size: 0.8rem;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        opacity: 0;
+        flex-direction: column;
+        height: 100%;
+        justify-content: flex-end;
+        background: rgb(2, 2, 46);
+        background: linear-gradient(
+          0deg,
+          rgba(2, 2, 46, 0.6755077030812324) 0%,
+          rgba(255, 255, 255, 0) 100%
+        );
+        transform: translatey(100%);
+        transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
+        visibility: hidden;
+  
+        span {
+          display: block;
+          margin-top: 5px;
+          font-size: 1.2rem;
+        }
+      }
+  
+      &:hover {
+        flex: 0 0 250px;
+        box-shadow: 1px 3px 15px #7645d8;
+        transform: translatey(-30px);
+      }
+  
+      &:hover .content {
+        opacity: 1;
+        transform: translatey(0%);
+        visibility: visible;
+      }
+    }
+  }
+
+  /* Live Games Section */
+
+  .header-2 {
+    font-family: "Inria Sans", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 50px;
+    background: -webkit-linear-gradient(311deg, rgba(63,136,197,1) 39%, rgba(208,0,0,1) 56%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .scoreboard-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    background-color: transparent;
+    padding: 15px;
+}
+
+.game-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.game {
+    flex: 1;
+    min-width: 450px;
+    max-width: 450px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    background-color: #fafafa;
+    
+}
+
+.game-time {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.team-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.team {
+    display: flex;
+    align-items: center;
+}
+
+.team-logo {
+    object-fit: cover;
+    width: auto;
+    height: auto;
+    max-width: 30%;
+    /* background-color: #ddd; Placeholder for team logo */
+    /* border-radius: 50%; */
+    margin-right: 5px;
+}
+
+.team-name {
+    font-weight: bold;
+}
+
+.team-record {
+    font-size: 12px;
+    color: #999;
+    margin-left: 7px;
+}
+
+.team-score {
+    font-size: 18px;
+    color: #333;
+    margin-left: 10px;
+}
+
+.game-info {
+    font-size: 12px;
+    color: #999;
+    text-align: right;
+}
